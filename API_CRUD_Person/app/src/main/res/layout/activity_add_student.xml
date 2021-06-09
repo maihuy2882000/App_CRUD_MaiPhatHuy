@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFC635"
+    tools:context=".AddStudentActivity">
+
+
+    <EditText
+        android:id="@+id/edt_working"
+        android:layout_width="351dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/custom_edt"
+
+        android:drawableLeft="@drawable/ic_home"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Working at"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_status"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_status"
+        app:layout_constraintTop_toBottomOf="@+id/edt_status" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="351dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/black"
+        android:text="Create"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edt_working"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_working"
+        app:layout_constraintTop_toBottomOf="@+id/edt_working" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnUpdate"
+        app:layout_constraintStart_toStartOf="@+id/btnUpdate" />
+
+    <EditText
+        android:id="@+id/edt_status"
+        android:layout_width="351dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_edt"
+
+        android:drawableLeft="@drawable/ic_charging_circle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Status"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_class"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_class"
+        app:layout_constraintTop_toBottomOf="@+id/edt_class" />
+
+    <EditText
+        android:id="@+id/edt_class"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_edt"
+
+        android:drawableLeft="@drawable/ic_presentation"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Class"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_name"
+        app:layout_constraintStart_toStartOf="@+id/edt_name"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_edt"
+
+        android:drawableLeft="@drawable/ic_user1"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="student name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="ADD STUDENT"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
